@@ -1,11 +1,17 @@
 import React from "react";
 
-function Article(props) {
+function Article({ title, date, preview }) {
+  const displayDate = new Date(date || 0).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   return (
     <article>
-      <h3>{props.title}</h3>
-      <small>{props.date}</small>
-      <p>{props.preview}</p>
+      <h3>{title}</h3>
+      <small>{displayDate}</small>
+      <p>{preview}</p>
     </article>
   );
 }

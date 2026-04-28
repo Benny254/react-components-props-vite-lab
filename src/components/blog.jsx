@@ -1,21 +1,24 @@
 const blog = {
-  name: "My Blog",
-  image: "public/images/image.png",
-  about: "Welcome to my blog where I share my thoughts.",
   posts: [
     {
       id: 1,
       title: "First Post",
-      date: "April 20, 2026",
-      preview: "This is my first article preview."
+      date: "2020-12-15",
+      preview: "This is the first post preview",
     },
     {
       id: 2,
-      title: "React is Fun",
-      date: "April 25, 2026",
-      preview: "React makes building UIs simple."
-    }
-  ]
+      title: "Second Post",
+      date: "2020-12-16",
+      preview: "This is the second post preview",
+    },
+    {
+      id: 3,
+      title: "Third Post",
+      date: "2020-12-17",
+      preview: "This is the third post preview",
+    },
+  ],
 };
 
 export default blog;
